@@ -1,3 +1,3 @@
 # site
 a site?
-goes to [this site](https://lineonthepaper.github.io/site/index.html)
+goes to [this site](https://lineonthepaper.github.io/comminfo/index.html)
