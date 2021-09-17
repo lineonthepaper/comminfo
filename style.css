@@ -1,0 +1,148 @@
+html {
+    overflow: -moz-scrollbars-vertical; 
+    overflow-y: scroll;
+}
+
+body {
+    font-size:17px;
+    font-family: Nunito;
+    background-color:#94b5eb;
+    padding-top:5px;
+}
+
+.navbar {
+    font-family:Lato;
+    font-size:14px;
+    padding-bottom:3px;
+    border-bottom:2px solid #d3d8eb !important;
+}
+
+navbar-header>a {
+    color:#547391 !important;
+}
+
+.main {
+    background-color:white;
+    border-radius:10px;
+    padding-bottom:10px;
+    padding-left:5%;
+    padding-right:5%;
+    margin-bottom:15px;
+}
+
+nav li a {
+    background-color:white !important;
+    letter-spacing:0.05em;
+    transition: text-shadow 0.2s;
+}
+
+li.active, nav li:hover {
+    text-shadow: 0 0 0.65px #23527c, 0 0 0.65px #23527c;
+    text-decoration:underline #94b5eb !important;
+    text-underline-offset:3px !important;
+    text-decoration-thickness:2px !important;
+}
+
+h1, h2, h3 {
+    font-family:Lato;
+    color:#424547;
+}
+
+p {
+    color:#515557;
+}
+
+.ratimage img {
+    position:fixed;
+    right:0;
+    z-index:1;
+    width:20%;
+    min-width:8em;
+    top:25%;
+}
+
+/* index.html */
+.drawlist > table {
+    margin-left:auto;
+    margin-right:auto;
+    width:65%;
+    color:#515557;
+}
+
+.drawlist > table ul {
+    padding-left:15px;
+}
+
+.drawlist li, .rates li{
+    padding-top:0.15em;
+    padding-bottom:0.15em;
+}
+
+/* about.html */
+.about img {
+    width:30%;
+    margin-bottom:0.7em;
+}
+
+/* rates.html */
+.rates li {
+    margin-left:-1em;
+}
+
+.rates, .rates2 {
+    padding-left:8%;
+    padding-right:8%;
+}
+
+.rates h3, .rates2 h3{
+    text-decoration:underline #d3d8eb;
+    text-underline-offset:0.2em;
+    text-decoration-thickness:2px;
+    margin-bottom:0.8em;
+}
+
+.rates h3 + img {
+    width:70%;
+    min-width:250px;
+    margin-bottom:1em;
+}
+
+#half-half {
+    color:#006ac7;
+}
+
+#full {
+    color:#00b55b;
+}
+
+/* ratesv2 */
+
+.hiddensp {
+    -webkit-transition: max-height 0.3s ease-in, opacity 0.3s ease-in-out;
+       -moz-transition: max-height 0.3s ease-in, opacity 0.3s ease-in-out;
+        -ms-transition: max-height 0.3s ease-in, opacity 0.3s ease-in-out;
+         -o-transition: max-height 0.3s ease-in, opacity 0.3s ease-in-out;
+            transition: max-height 0.3s ease-in, opacity 0.3s ease-in-out;
+}
+
+/* contact */
+ul.contact-info li {
+    font-size:1.2em;
+    list-style-type:none;
+}
+
+
+/* window size stuff */
+@media screen and (max-width:768px) {
+    body {
+        font-size:14px;
+    }
+    
+    .drawlist > table {
+        width:75%
+    }
+    
+    .about > img {
+        width:42%
+    }
+}
