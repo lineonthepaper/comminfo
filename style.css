@@ -52,13 +52,22 @@ p {
     color:#515557;
 }
 
-.ratimage img {
+/*.ratimage img {
     position:fixed;
     right:0;
     z-index:1;
     width:20%;
     min-width:8em;
     top:25%;
+}*/
+
+.rattop img {
+    position:fixed;
+    right:8%;
+    z-index:1;
+    width:15%;
+    top:0;
+    min-width:8em;
 }
 
 /* index.html */
