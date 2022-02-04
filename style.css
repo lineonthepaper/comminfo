@@ -7,33 +7,43 @@ body {
     font-size:17px;
     font-family: Nunito;
     background-color:#7282b1;
-    padding-top:5px;
+    /*padding-top:5px;*/
+    min-height:100vh !important;
 }
 
 .navbar {
     font-family:Lato;
     font-size:14px;
     padding-bottom:3px;
-    border-bottom:2px solid #d3d8eb !important;
+    /*border-bottom:2px solid #d3d8eb !important;*/
+    border-radius:10px;
 }
 
-navbar-header>a {
-    color:#547391 !important;
+.navbar + hr {
+    margin-top:-20px;
+    margin-left:8px;
+    margin-right:8px;
+    border:1px solid #d3d8eb
 }
 
 .main {
     background-color:white;
     border-radius:10px;
-    padding-bottom:10px;
+    /*padding-bottom:10px;
     padding-left:5%;
     padding-right:5%;
-    margin-bottom:15px;
+    margin-bottom:15px;*/
+    min-height:100vh !important;
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 nav li a {
     background-color:white !important;
     letter-spacing:0.05em;
     transition: text-shadow 0.2s;
+    border-radius:10px;
 }
 
 li.active, nav li:hover {
@@ -52,15 +62,6 @@ p {
     color:#515557;
 }
 
-/*.ratimage img {
-    position:fixed;
-    right:0;
-    z-index:1;
-    width:20%;
-    min-width:8em;
-    top:25%;
-}*/
-
 .rattop img {
     position:fixed;
     right:8%;
@@ -78,8 +79,21 @@ p {
     color:#515557;
 }
 
-.drawlist > table ul {
-    padding-left:15px;
+.drawlist > table ul{
+    padding-left:0;
+}
+
+.drawlist > table li{
+    list-style-type:none;
+}
+
+.drawlist > table th, .drawlist > table ul, .links a {
+    text-align:center;
+}
+
+.drawlist > table {
+    table-layout:fixed;
+    width:50%;
 }
 
 .drawlist li, .rates li{
@@ -92,6 +106,16 @@ p {
     width:30%;
     margin-bottom:0.7em;
 }
+.about p {
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:auto;
+}
+.about .row {
+    margin-left:auto;
+    margin-right:auto;
+}
 
 /* rates.html */
 .rates li {
@@ -99,8 +123,11 @@ p {
 }
 
 .rates, .rates2 {
-    padding-left:8%;
-    padding-right:8%;
+    padding-left:min(300px, 15%);
+    padding-right:min(300px, 15%);
+    width:80%;
+    min-width:700px;
+    margin:auto;
 }
 
 .rates h3, .rates2 h3{
@@ -111,10 +138,14 @@ p {
 }
 
 .rates h3 + img {
-    width:85%;
-    min-width:280px;
+    width:90%;
+    min-width:290px;
     margin-bottom:1em;
-    margin-left:-15px;
+    /*margin-left:-15px*/
+}
+
+.rates #tos + ul {
+    margin-bottom:auto;
 }
 
 #half-half {
@@ -141,6 +172,14 @@ ul.contact-info li {
     list-style-type:none;
 }
 
+ul.contact-info {
+    padding-left:0;
+}
+
+ul.contact-info li a:hover, .links a:hover, .about a:hover {
+    text-decoration:none !important;
+}
+
 ul.contact-info + img {
     margin-left:auto;
     margin-right:auto;
@@ -150,11 +189,19 @@ ul.contact-info + img {
     
 }
 
+/* links.html */
+a.thumbnail img {
+    height:10em;
+}
+
+a.thumbnail {
+    display:inline-block;
+}
 
 /* window size stuff */
 @media screen and (max-width:768px) {
     body {
-        font-size:14px;
+        font-size:15px;
     }
     
     .drawlist > table {
@@ -164,4 +211,61 @@ ul.contact-info + img {
     .about > img {
         width:42%
     }
+    .navbar a {
+        margin-left:5%;
+        margin-right:5%;
+    }
+    .rates, .rates img {
+        max-width:700px;
+        min-width:400px;
+        padding-left:min(100px, 8%);
+    }
+}
+
+/* loader */
+#loader {
+    position:absolute;
+    left:50%;
+    top:50%;
+    z-index:1;
+    width:120px;
+    height:120px;
+    margin:-76px 0 0 -76px;
+    /*border:16px solid #f3f3f3;
+    border-radius:50%;
+    border-top:16px solid #3498db;
+    -webkit-animation:spin 2s linear infinite;
+    animation:spin 2s linear infinite;*/
+}
+
+/*@-webkit-keyframes spin {
+    0% {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(360deg);}
+}
+
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}*/
+
+.animate-bottom {
+    position:relative;
+    -webkit-animation-name:animatebottom;
+    -webkit-animation-duration:1s;
+    animation-name:animatebottom;
+    animation-duration:1s;
+}
+
+@-webkit-keyframes animatebottom {
+    from {bottom:-100px; opacity:0}
+    to {bottom:0; opacity:1}
+}
+
+@keyframes animatebottom {
+    from {bottom:-100px; opacity:0}
+    to {bottom:0; opacity:1}
+}
+
+#page {
+    display:none;
 }

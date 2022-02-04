@@ -21,6 +21,9 @@
         
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         
+        <!-- Loading Script -->
+        <script src="loading.js"></script>
+        
         <!-- Embed stuff -->
         <meta property="og:title" content="Eon's Commissions" />
         <meta property="og:type" content="website" />
@@ -29,45 +32,43 @@
         <meta property="og:image:width" content="300" />
         <meta property="og:description" content="This is Eon's commission info site. Feel free to take a look around, and enjoy your stay!" />
 	</head>
-	<body>
-        <div class="container-fluid">
+	<body onload="callTimeout()">
+        <div id="loader"><img src="compressed.gif"></div>
+        <div class="container-fluid animate-bottom" id="page">
             <div class="rattop">
                 <img src="https://cdn.discordapp.com/attachments/928113470237442069/928568818853355550/rat_poking_down.png">
             </div>
             <!--<div class="ratimage">
                 <img src="https://cdn.discordapp.com/attachments/824178537703276555/882124344212467712/rat_poking_out.png">
             </div>-->
-            <div class="row">
-                <div class="col-sm-2 col-xs-1"></div>
-                <div class="col-sm-8 col-xs-10 main">
-                    <nav class= "navbar">
-                        <ul class="navbar-nav nav">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="rates.html">My Rates</a></li>
-                            <li class="active"><a href="#">Contact</a></li>
-                            <li><a href="about.html">About</a></li>
-                        </ul>
-                    </nav>
+            <div class="main">
+                <nav class= "navbar">
+                    <ul class="navbar-nav nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="rates.html">My Rates</a></li>
+                        <li class="active"><a href="#">Contact</a></li>
+                        <li><a href="links.html">Links</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </nav>
+                <hr>
+                
+                <div class="contact">
+                    <h1 class="text-center">contact</h1>
+                    <p class="text-center">
+                        So! Interested in commissioning me, or have questions to ask?
+                        <br>
+                        Here's the info! Discord is preferred because I check that more often, but Twitter is also fine! 
+                        <br>
+                        I check my email the least, but it's still an option if you don't use Discord or Twitter!
+                    </p>
+                    <ul class="text-center contact-info">
+                        <li><a target="_blank" href="https://discord.com/">Discord: eon#9911</a></li>
+                        <li><a target="_blank" href="https://twitter.com/eon_exists">Twitter: @eon_exists</a></li>
+                        <li><a target="_blank" href="mailto:lineonrl@gmail.com?subject=Commission">Email: lineonrl@gmail.com</a></li>
+                    </ul>
+                    <img src="https://cdn.discordapp.com/attachments/928113470237442069/928576583227293726/want_to_call.png">
                     
-                    <div class="contact">
-                        <h1 class="text-center">contact</h1>
-                        <p class="text-center">
-                            So! Interested in commissioning me, or have questions to ask?
-                            <br>
-                            Here's the info! Discord is preferred because I check that more often, but Twitter is also fine! 
-                            <br>
-                            I check my email the least, but it's still an option if you don't use Discord or Twitter!
-                        </p>
-                        <ul class="text-center contact-info">
-                            <li>Discord: eon#9911</li>
-                            <li>Twitter: @eon_exists</li>
-                            <li>Email: lineonrl@gmail.com</li>
-                        </ul>
-                        <img src="https://cdn.discordapp.com/attachments/928113470237442069/928576583227293726/want_to_call.png">
-                    </div>
-                    
-                </div>
-                <div class="col-sm-2 col-xs-1"></div>
                 </div>
             </div>
 	</body>

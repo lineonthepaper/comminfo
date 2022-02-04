@@ -21,6 +21,9 @@
         
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         
+        <!-- Loading Script -->
+        <script src="loading.js"></script>
+        
         <!-- Embed stuff -->
         <meta property="og:title" content="Eon's Commissions" />
         <meta property="og:type" content="website" />
@@ -29,25 +32,26 @@
         <meta property="og:image:width" content="300" />
         <meta property="og:description" content="This is Eon's commission info site. Feel free to take a look around, and enjoy your stay!" />
 	</head>
-	<body>
-        <div class="container-fluid">
+	<body onload="callTimeout()">
+        <div id="loader"><img src="compressed.gif"></div>
+        <div class="container-fluid animate-bottom" id="page">
             <div class="rattop">
                 <img src="https://cdn.discordapp.com/attachments/928113470237442069/928568818853355550/rat_poking_down.png">
             </div>
             <!--<div class="ratimage">
                 <img src="https://cdn.discordapp.com/attachments/824178537703276555/882124344212467712/rat_poking_out.png">
             </div>-->
-            <div class="row">
-                <div class="col-sm-2 col-xs-1"></div>
-                <div class="col-sm-8 col-xs-10 main">
+            <div class="main">
                     <nav class= "navbar">
                         <ul class="navbar-nav nav">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="rates.html">My Rates</a></li>
                             <li><a href="contact.html">Contact</a></li>
+                            <li><a href="links.html">Links</a></li>
                             <li class="active"><a href="#">About</a></li>
                         </ul>
                     </nav>
+                    <hr>
                     
                     <div class="about">
                         <h1 class="text-center">about me</h1>
@@ -57,18 +61,14 @@
                             <br>
                             I assume you're here because you've seen my art before. In that case, apologies for the rat spam.
                             <br>
-                            I also run an Etsy shop. <a href="https://www.etsy.com/uk/shop/EonMakes">Check it out!</a>
+                            I also run an Etsy shop. <a target="_blank" href="https://www.etsy.com/uk/shop/EonMakes">Check it out!</a>
                         </p>
                         <br>
                         <img src="https://cdn.discordapp.com/attachments/824178537703276555/880847107756531722/cat.png" class="img-rounded center-block">
                         <p class="text-center">
                             I also have a cat. Her name is Cotton and she likes food and annoying me.
                         </p>
-                    </div>
                     
                 </div>
-                <div class="col-sm-2 col-xs-1"></div>
-                </div>
-            </div>
 	</body>
 </html>
