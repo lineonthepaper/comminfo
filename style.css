@@ -8,7 +8,7 @@ body {
     font-family: Nunito;
     background-color:#7282b1;
     padding-top:5px;
-    min-height:100vh !important;
+    /*min-height:100vh !important;*/
 }
 
 .navbar {
@@ -33,7 +33,7 @@ body {
     /*padding-left:5%;
     padding-right:5%;*/
     margin-bottom:15px;
-    min-height:100vh !important;
+    /*min-height:100vh !important;*/
     width:90%;
     min-width:250px;
     margin-left:auto;
@@ -105,12 +105,14 @@ p {
 .footerimg img {
     width:45%;
     min-width:250px;
+    max-width: 700px;
 }
 
 /* about.html */
 .about img {
     width:30%;
     margin-bottom:0.7em;
+    max-width: 500px;
 }
 .about p {
     width:80%;
@@ -149,6 +151,7 @@ p {
     width:90%;
     min-width:290px;
     margin-bottom:1em;
+    max-width: 1000px;
 }
 
 .rates #tos + ul {
@@ -193,6 +196,7 @@ ul.contact-info + img {
     display:block;
     width:50%;
     min-width:200px;
+    max-width: 700px;
     
 }
 
