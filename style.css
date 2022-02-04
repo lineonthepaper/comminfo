@@ -223,6 +223,9 @@ a.thumbnail {
 }
 
 /* loader */
+#loader {
+    display:block;
+}
 #loader img {
     position:absolute;
     left:50%;
