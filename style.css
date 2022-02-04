@@ -125,7 +125,7 @@ p {
     margin-left:-1em;
 }
 
-.rates, .rates2 {
+.main {
     padding-left:min(300px, 10%);
     padding-right:min(300px, 10%);
     width:80%;
@@ -211,7 +211,7 @@ a.thumbnail {
     }
     
     .drawlist > table {
-        width:75%
+        width:90%
     }
     
     .about > img {
@@ -221,7 +221,7 @@ a.thumbnail {
         margin-left:5%;
         margin-right:5%;
     }
-    .rates {
+    .main {
         max-width:700px;
         min-width:80vw;
     }
