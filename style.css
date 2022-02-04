@@ -101,6 +101,11 @@ p {
     padding-bottom:0.15em;
 }
 
+.footerimg img {
+    width:45%;
+    min-width:250px;
+}
+
 /* about.html */
 .about img {
     width:30%;
