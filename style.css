@@ -8,6 +8,7 @@ body {
     font-family: Nunito;
     background-color:#7282b1;
     padding-top:5px;
+    padding-bottom:15px;
 }
 
 .navbar {
@@ -231,6 +232,10 @@ a.thumbnail {
         min-width:70vw !important;
         width:70%;
         margin-left:-10px;
+    }
+    
+    a.thumbnail img {
+        max-height:30vw;
     }
 
 }
