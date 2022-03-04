@@ -186,7 +186,7 @@ a:hover {
     text-decoration:none !important;
 }
 
-ul.contact-info + img {
+ul.contact-info + img, #testimonialsrat {
     margin-left:auto;
     margin-right:auto;
     display:block;
@@ -203,6 +203,39 @@ a.thumbnail img {
 
 a.thumbnail {
     display:inline-block;
+}
+
+/* testimonials.html */
+p.quote::before, p.quote::after {
+    font-size:1.6em;
+    font-family:Georgia;
+    color:#313334;
+    line-height:0.8;
+}
+
+p.quote::before {
+    content:'“';
+}
+
+p.quote::after {
+    content:'”';
+}
+
+p.quote {
+    padding-left:20px;
+    margin-bottom:0px;
+    font-size:1.1em;
+    font-style:italic;
+    line-height:1.8;
+}
+
+p.cite {
+    text-align:right;
+    padding-bottom:1.5em;
+}
+
+p.cite::before {
+    content:"—"
 }
 
 /* window size stuff */
