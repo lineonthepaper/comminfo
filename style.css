@@ -127,8 +127,8 @@ p {
 }
 
 .main {
-    padding-left:min(300px, 10%);
-    padding-right:min(300px, 10%);
+    padding-left:min(300px, 4%);
+    padding-right:min(300px, 4%);
     width:80%;
     left:auto;
     right:auto;
@@ -257,7 +257,7 @@ p.cite::before {
     }
     .main {
         max-width:700px;
-        min-width:80vw;
+        min-width:95vw;
     }
     
     .rates img {
