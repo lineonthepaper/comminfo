@@ -257,7 +257,7 @@ p.cite::before {
     }
     .main {
         max-width:700px;
-        min-width:95vw;
+        min-width:90vw;
     }
     
     .rates img {
