@@ -29,11 +29,11 @@ body {
     background-color:white;
     border-radius:10px;
     padding-bottom:10px;
-    margin-bottom:15px;
-    width:90%;
-    min-width:250px;
-    margin-left:auto;
-    margin-right:auto;
+    padding-left:min(300px, 10%);
+    padding-right:min(300px, 10%);
+    width:80%;
+    min-width:700px;
+    margin:auto;
 }
 
 nav li a {
@@ -124,16 +124,6 @@ p {
 /* rates.html */
 .rates li {
     margin-left:-1em;
-}
-
-.main {
-    padding-left:min(300px, 4%);
-    padding-right:min(300px, 4%);
-    width:80%;
-    left:auto;
-    right:auto;
-    min-width:700px;
-    margin:auto;
 }
 
 .rates h3, .rates2 h3{
@@ -258,13 +248,14 @@ p.cite::before {
     .main {
         max-width:700px;
         min-width:90vw;
+        padding-left:5%;
+        padding-right:5%;
     }
     
     .rates img {
         max-width:700px;
         min-width:70vw !important;
         width:70%;
-        margin-left:-10px;
     }
     
     a.thumbnail img {
