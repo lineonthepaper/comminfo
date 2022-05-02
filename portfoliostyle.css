@@ -1,0 +1,45 @@
+.phone {
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:50%;
+}
+
+.portfolio {
+    min-height:100vh;
+}
+
+/*body {
+    margin-bottom:100px;
+}*/
+
+.phone img {
+    width:18vw;
+    min-width:150px;
+}
+
+#rathand {
+    position:absolute;
+    left:max(12vw, 100px);
+    bottom:-4%;
+    /*bottom:23%;*/
+    display:none;
+}
+
+.thumbnail img {
+    height:30vh;
+    min-height:100px;
+    margin-bottom:3px;
+}
+
+div.thumbnail {
+    display:inline-block;
+    font-size:0.85em;
+}
+
+@media screen and (max-width:768px) {
+    
+    .thumbnail img {
+        max-height:40vw;
+    }
+}
