@@ -42,4 +42,8 @@ div.thumbnail {
     .thumbnail img {
         max-height:40vw;
     }
+    
+    .phone {
+        margin-left:max(calc(calc(40px - 2vw) * -1), -30px);
+    }
 }
