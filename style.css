@@ -122,9 +122,6 @@ p {
 }
 
 /* rates.html */
-.rates li {
-    margin-left:-1em;
-}
 
 .rates h3, .rates2 h3{
     text-decoration:underline #d3d8eb;
@@ -133,11 +130,18 @@ p {
     margin-bottom:0.8em;
 }
 
-.rates h3 + img {
-    width:90%;
+.rates h3 + img, .artexample {
+    width:80%;
     min-width:290px;
     margin-bottom:1em;
     max-width: 1000px;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+}
+
+ul.artrates {
+    list-style:none;
 }
 
 .rates #tos + ul {
