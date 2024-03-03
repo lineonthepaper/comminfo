@@ -168,6 +168,12 @@ ul.artrates {
 }
 
 /* contact */
+.contact {
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
 ul.contact-info li {
     font-size:1.2em;
     list-style-type:none;
